@@ -1,0 +1,11 @@
+---
+- name: installation
+  hosts: web
+  remote_user: adlane-vm-user
+
+  tasks: 
+    - name: Creation fichier 
+      file:
+        path: ./app-test.py
+        state: touch  
+...
